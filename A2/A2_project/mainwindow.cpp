@@ -13,3 +13,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::generate_text(){
+
+}
+
+void MainWindow::examine_text(){
+
+}

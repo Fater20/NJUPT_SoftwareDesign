@@ -17,5 +17,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+public slots:
+    void generate_text();
+    void examine_text();
 };
 #endif // MAINWINDOW_H
