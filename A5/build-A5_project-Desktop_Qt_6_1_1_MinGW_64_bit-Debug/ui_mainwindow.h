@@ -110,6 +110,7 @@ public:
         MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
+        QObject::connect(transfer_Button, SIGNAL(clicked()), MainWindow, SLOT(transfer()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -126,7 +127,7 @@ public:
         label_3->setText(QCoreApplication::translate("MainWindow", "DEC", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "HEX", nullptr));
         transfer_Button->setText(QCoreApplication::translate("MainWindow", "\350\275\254\346\215\242", nullptr));
-        error_label->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        error_label->setText(QString());
     } // retranslateUi
 
 };

@@ -218,7 +218,7 @@
      </font>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -228,5 +228,25 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>transfer_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>transfer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>364</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>transfer()</slot>
+ </slots>
 </ui>
