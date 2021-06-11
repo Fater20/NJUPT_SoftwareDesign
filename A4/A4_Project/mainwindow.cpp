@@ -13,6 +13,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+//加密函数
 void MainWindow::MtoC(){
     QString M_content = ui->M_text->toPlainText(); //获取M_text的内容
 
@@ -43,6 +44,7 @@ void MainWindow::MtoC(){
      ui->C_text->setText(C_content);
 }
 
+//解密函数
 void MainWindow::CtoM(){
     QString C_content = ui->C_text->toPlainText(); //获取C_text的内容
 
