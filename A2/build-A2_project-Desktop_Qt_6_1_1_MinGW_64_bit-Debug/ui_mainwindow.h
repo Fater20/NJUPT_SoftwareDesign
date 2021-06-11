@@ -62,16 +62,18 @@ public:
         examine_Button->setGeometry(QRect(240, 300, 93, 28));
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(120, 250, 72, 15));
+        label_3->setGeometry(QRect(151, 250, 41, 20));
         Accuracy_num = new QLabel(centralwidget);
         Accuracy_num->setObjectName(QString::fromUtf8("Accuracy_num"));
-        Accuracy_num->setGeometry(QRect(200, 250, 72, 15));
+        Accuracy_num->setGeometry(QRect(200, 250, 51, 16));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
+        QObject::connect(generate_Button, SIGNAL(clicked()), MainWindow, SLOT(generate_text()));
+        QObject::connect(examine_Button, SIGNAL(clicked()), MainWindow, SLOT(examine_text()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi

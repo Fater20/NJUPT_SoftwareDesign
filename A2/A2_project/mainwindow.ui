@@ -95,10 +95,10 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>151</x>
       <y>250</y>
-      <width>72</width>
-      <height>15</height>
+      <width>41</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -110,8 +110,8 @@
      <rect>
       <x>200</x>
       <y>250</y>
-      <width>72</width>
-      <height>15</height>
+      <width>51</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
@@ -122,5 +122,42 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>generate_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>generate_text()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>137</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>examine_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>examine_text()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>generate_text()</slot>
+  <slot>examine_text()</slot>
+ </slots>
 </ui>

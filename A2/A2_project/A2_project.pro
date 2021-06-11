@@ -17,7 +17,7 @@ HEADERS += \
 
 FORMS += \
     mainwindow.ui
-
+TARGET = A2
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
