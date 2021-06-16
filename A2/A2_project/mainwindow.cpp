@@ -49,7 +49,7 @@ void MainWindow::examine_text(){
     QString text_output_content = ui->text_output->toPlainText();   //获取text_output的内容
     if ( text_input_content.isEmpty() )
     {
-        QMessageBox::warning(NULL,"错误","请先生成字符串",QMessageBox::Cancel);
+        QMessageBox::warning(NULL,"ERROR","请先生成字符串",QMessageBox::Cancel);
     }
     else
     {
