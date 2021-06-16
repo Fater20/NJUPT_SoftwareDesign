@@ -33,7 +33,7 @@ void MainWindow::on_pushButton_next_clicked()
     QString input_score = ui->lineEdit_score->text();
     if ( input_name.isEmpty()||input_score.isEmpty())
     {
-        QMessageBox::warning(NULL,"错误","输入不能为空",QMessageBox::Cancel);
+        QMessageBox::warning(NULL,"ERROR","输入不能为空",QMessageBox::Cancel);
     }
     else
     {
@@ -54,7 +54,7 @@ void MainWindow::on_pushButton_sort_clicked()
 {
     if(input_num==0)
     {
-        QMessageBox::warning(NULL,"错误","未录入成绩",QMessageBox::Cancel);
+        QMessageBox::warning(NULL,"ERROR","未录入成绩",QMessageBox::Cancel);
     }
     else
     {
