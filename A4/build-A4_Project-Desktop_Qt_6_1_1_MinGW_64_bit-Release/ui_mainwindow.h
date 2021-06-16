@@ -86,7 +86,7 @@ public:
         Decrypt_Button->setText(QCoreApplication::translate("MainWindow", "\350\247\243\345\257\206", nullptr));
         M_label->setText(QCoreApplication::translate("MainWindow", "\346\230\216\346\226\207M", nullptr));
         C_label->setText(QCoreApplication::translate("MainWindow", "\345\257\206\346\226\207C", nullptr));
-        K_text->setPlaceholderText(QCoreApplication::translate("MainWindow", "   \346\225\260\345\255\227", nullptr));
+        K_text->setPlaceholderText(QCoreApplication::translate("MainWindow", "\346\225\260\345\255\227", nullptr));
         K_label->setText(QCoreApplication::translate("MainWindow", "\345\257\206\351\222\245K", nullptr));
     } // retranslateUi
 

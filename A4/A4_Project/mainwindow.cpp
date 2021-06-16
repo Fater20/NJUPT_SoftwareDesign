@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+char error_flag = 0;
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -35,13 +37,23 @@ void MainWindow::MtoC(){
             continue;
         else
         {
-            C_content = "请输入有效明文和密钥。\n";
+            error_flag = 1;
+            QMessageBox::warning(NULL,"ERROR","请输入有效的明文和密钥。\n",QMessageBox::Cancel);
+            //C_content = "请输入有效明文和密钥。\n";
             break;
         }
     }
+    if(error_flag == 0)
+    {
+        //  将C_content输出到C_text
+        ui->C_text->setText(C_content);
+    }
+    else
+    {
+        ui->C_text->clear();
+        error_flag = 0;
+    }
 
-    //  将C_content输出到C_text
-     ui->C_text->setText(C_content);
 }
 
 //解密函数
@@ -66,11 +78,20 @@ void MainWindow::CtoM(){
             continue;
         else
         {
-            M_content = "请输入有效密文和密钥。\n";
+            error_flag = 1;
+            QMessageBox::warning(NULL,"ERROR","请输入有效的密文和密钥。\n",QMessageBox::Cancel);
+            //M_content = "请输入有效密文和密钥。\n";
             break;
         }
     }
-
-    //  将M_content输出到M_text
-     ui->M_text->setText(M_content);
+    if(error_flag == 0)
+    {
+        //  将M_content输出到M_text
+        ui->M_text->setText(M_content);
+    }
+    else
+    {
+        ui->M_text->clear();
+        error_flag = 0;
+    }
 }

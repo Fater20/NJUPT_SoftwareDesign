@@ -102,7 +102,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>   数字</string>
+     <string>数字</string>
     </property>
    </widget>
    <widget class="QLabel" name="K_label">
