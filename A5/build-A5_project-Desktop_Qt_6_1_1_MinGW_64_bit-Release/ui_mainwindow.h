@@ -38,14 +38,13 @@ public:
     QLabel *label_3;
     QLabel *label_4;
     QPushButton *transfer_Button;
-    QLabel *error_label;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(400, 450);
+        MainWindow->resize(400, 400);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         bin_radioButton = new QRadioButton(centralwidget);
@@ -96,14 +95,7 @@ public:
         label_4->setScaledContents(false);
         transfer_Button = new QPushButton(centralwidget);
         transfer_Button->setObjectName(QString::fromUtf8("transfer_Button"));
-        transfer_Button->setGeometry(QRect(150, 350, 80, 22));
-        error_label = new QLabel(centralwidget);
-        error_label->setObjectName(QString::fromUtf8("error_label"));
-        error_label->setGeometry(QRect(120, 310, 145, 28));
-        QFont font1;
-        font1.setPointSize(10);
-        error_label->setFont(font1);
-        error_label->setAlignment(Qt::AlignCenter);
+        transfer_Button->setGeometry(QRect(150, 310, 80, 22));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -127,7 +119,6 @@ public:
         label_3->setText(QCoreApplication::translate("MainWindow", "DEC", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "HEX", nullptr));
         transfer_Button->setText(QCoreApplication::translate("MainWindow", "\350\275\254\346\215\242", nullptr));
-        error_label->setText(QString());
     } // retranslateUi
 
 };

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>450</height>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -194,34 +194,13 @@
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>350</y>
+      <y>310</y>
       <width>80</width>
       <height>22</height>
      </rect>
     </property>
     <property name="text">
      <string>转换</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="error_label">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>310</y>
-      <width>145</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>

@@ -82,16 +82,36 @@ QString INTtoA(int n,int radix)
 
 //转换后结果输出，或输出错误原因
 void MainWindow::result_output(int num){
-    if(num == -1)
-        ui->error_label->setText("请输入正确的二进制");
-    else if(num==-2)
-        ui->error_label->setText("请输入正确的八进制");
-    else if(num==-3)
-        ui->error_label->setText("请输入正确的十进制");
-    else if(num==-4)
-        ui->error_label->setText("请输入正确的十六进制");
+    if(num == -1){
+        ui->oct_input->clear();
+        ui->dec_input->clear();
+        ui->hex_input->clear();
+        QMessageBox::warning(NULL,"ERROR","请输入正确的二进制",QMessageBox::Cancel);
+    }
+    else if(num==-2){
+        ui->bin_input->clear();
+        ui->dec_input->clear();
+        ui->hex_input->clear();
+        QMessageBox::warning(NULL,"ERROR","请输入正确的八进制",QMessageBox::Cancel);
+    }
+    else if(num==-3){
+        ui->bin_input->clear();
+        ui->oct_input->clear();
+        ui->hex_input->clear();
+        QMessageBox::warning(NULL,"ERROR","请输入正确的十进制",QMessageBox::Cancel);
+    }
+    else if(num==-4){
+        ui->bin_input->clear();
+        ui->oct_input->clear();
+        ui->dec_input->clear();
+        QMessageBox::warning(NULL,"ERROR","请输入正确的十六进制",QMessageBox::Cancel);
+    }
     else{
-        ui->error_label->clear();
+        ui->bin_input->clear();
+        ui->oct_input->clear();
+        ui->dec_input->clear();
+        ui->hex_input->clear();
+
         ui->bin_input->setText(INTtoA(num, 2));
         ui->oct_input->setText(INTtoA(num, 8));
         ui->dec_input->setText(INTtoA(num, 10));
@@ -123,7 +143,7 @@ void MainWindow::transfer(){
         result_output(AtoINT(hex_input_content,16));
     }
     else{
-        ui->error_label->setText("请选择需要进行转换的进制");
+        QMessageBox::warning(NULL,"ERROR","请选择需要进行转换的进制",QMessageBox::Cancel);
     }
 
 }
