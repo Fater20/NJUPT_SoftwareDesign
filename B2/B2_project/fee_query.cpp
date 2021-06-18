@@ -29,8 +29,10 @@ fee_query::~fee_query()
     delete ui;
 }
 
+//计算某用户的本地话费、长途话费和全部费用
 void fee_query::caculate_fee()
 {
+    //查找匹配的通话记录（仅与主叫号码比较）
     for(int i = 0; i < source_cnt; i++)
     {
         if( !strcmp(group[i].m_pnum,user[query_num].pnum) )
@@ -44,6 +46,7 @@ void fee_query::caculate_fee()
     total_cost = loc_cost + ld_cost;
 }
 
+//显示信息与费用
 void fee_query::display_fee()
 {
     ui->textBrowser->setText(QString(user[query_num].name));

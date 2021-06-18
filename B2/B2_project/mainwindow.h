@@ -17,31 +17,31 @@ QT_END_NAMESPACE
 class SOURCE
 {
 public:
-    char m_dnum[5];
-    char m_pnum[10];
-    char s_dnum[5];
-    char s_pnum[10];
-    int time;
+    char m_dnum[5]; //主叫区号
+    char m_pnum[10];//主叫号码
+    char s_dnum[5]; //被叫区号
+    char s_pnum[10];//被叫号码
+    int time;       //通话时长
 };
 class FEE:public SOURCE
 {
 public:
-    char type;
-    float cost;
+    char type;  //本地'0',长途'1'
+    float cost; //费用
 };
 
 class USER
 {
 public:
-    char name[10];
-    char pnum[10];
+    char name[10];  //用户名
+    char pnum[10];  //电话号码
 };
 
 class RATE
 {
 public:
-    char dnum[5];
-    float fee_rate;
+    char dnum[5];   //区号
+    float fee_rate; //费率
 };
 
 class MainWindow : public QMainWindow
