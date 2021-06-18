@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Telecom Billing System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="placeholderText">
+         <string>号码</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>话费查询</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>话单查询</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="table"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Add</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_source"/>
+    <addaction name="actionAdd_user"/>
+    <addaction name="actionAdd_rate"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_user">
+   <property name="text">
+    <string>Add user data(&amp;u)</string>
+   </property>
+  </action>
+  <action name="actionAdd_source">
+   <property name="text">
+    <string>Add source data(&amp;s)</string>
+   </property>
+  </action>
+  <action name="actionAdd_rate">
+   <property name="text">
+    <string>Add rate data(&amp;r)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>query_record()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>358</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>384</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>query_fee()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>query_record()</slot>
+  <slot>query_fee()</slot>
+ </slots>
+</ui>
