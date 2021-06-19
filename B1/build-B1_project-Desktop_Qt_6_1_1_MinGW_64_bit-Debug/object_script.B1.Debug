@@ -1,0 +1,16 @@
+debug/main.o
+debug/mainwindow.o
+debug/ratinga.o
+debug/ratingb.o
+debug/ratingc.o
+debug/ratingd.o
+debug/ratinge.o
+debug/scoredlg.o
+debug/qrc_pic.o
+debug/moc_mainwindow.o
+debug/moc_ratinga.o
+debug/moc_ratingb.o
+debug/moc_ratingc.o
+debug/moc_ratingd.o
+debug/moc_ratinge.o
+debug/moc_scoredlg.o

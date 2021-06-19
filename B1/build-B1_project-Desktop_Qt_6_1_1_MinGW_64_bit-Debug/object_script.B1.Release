@@ -1,0 +1,16 @@
+release/main.o
+release/mainwindow.o
+release/ratinga.o
+release/ratingb.o
+release/ratingc.o
+release/ratingd.o
+release/ratinge.o
+release/scoredlg.o
+release/qrc_pic.o
+release/moc_mainwindow.o
+release/moc_ratinga.o
+release/moc_ratingb.o
+release/moc_ratingc.o
+release/moc_ratingd.o
+release/moc_ratinge.o
+release/moc_scoredlg.o
