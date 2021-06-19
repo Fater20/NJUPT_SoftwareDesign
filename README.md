@@ -16,4 +16,4 @@ Updating ~~~
 
 |B1|B2| 
 |:----:|:----:|
-||<img src="https://github.com/Fater20/NJUPT_SoftwareDesign/blob/main/image/B2.png" width="400" height="300" />|
+|<img src="https://github.com/Fater20/NJUPT_SoftwareDesign/blob/main/image/B1.png" width="400" height="300" />|<img src="https://github.com/Fater20/NJUPT_SoftwareDesign/blob/main/image/B2.png" width="400" height="300" />|
