@@ -140,12 +140,12 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_pic.cpp
 debug/qrc_pic.cpp: ../B1_project/pic.qrc \
 		C:/Qt/6.1.1/mingw81_64/bin/rcc.exe \
-		../../../Final_version/Test1_proj/pic/100.png \
-		../../../Final_version/Test1_proj/pic/background_3.png \
-		../../../Final_version/Test1_proj/pic/background.png \
-		../../../Final_version/Test1_proj/pic/njupt.png \
-		../../../Final_version/Test1_proj/pic/background_4.png \
-		../../../Final_version/Test1_proj/pic/background_2.png
+		../B1_project/pic/100.png \
+		../B1_project/pic/background.png \
+		../B1_project/pic/background_3.png \
+		../B1_project/pic/background_4.png \
+		../B1_project/pic/background_2.png \
+		../B1_project/pic/njupt.png
 	C:\Qt\6.1.1\mingw81_64\bin\rcc.exe -name pic ..\B1_project\pic.qrc -o debug\qrc_pic.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h

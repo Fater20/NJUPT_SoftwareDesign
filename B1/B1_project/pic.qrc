@@ -1,10 +1,10 @@
 <RCC>
     <qresource prefix="/new/prefix1">
-        <file>../../../Final_version/Test1_proj/pic/njupt.png</file>
-        <file>../../../Final_version/Test1_proj/pic/background_4.png</file>
-        <file>../../../Final_version/Test1_proj/pic/background_3.png</file>
-        <file>../../../Final_version/Test1_proj/pic/background_2.png</file>
-        <file>../../../Final_version/Test1_proj/pic/background.png</file>
-        <file>../../../Final_version/Test1_proj/pic/100.png</file>
+        <file>pic/100.png</file>
+        <file>pic/background.png</file>
+        <file>pic/background_2.png</file>
+        <file>pic/background_3.png</file>
+        <file>pic/background_4.png</file>
+        <file>pic/njupt.png</file>
     </qresource>
 </RCC>

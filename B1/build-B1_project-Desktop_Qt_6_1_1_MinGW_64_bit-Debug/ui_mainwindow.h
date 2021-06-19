@@ -65,7 +65,7 @@ public:
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(60, 10, 71, 81));
-        label_2->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/Final_version/Test1_proj/pic/njupt.png")));
+        label_2->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/pic/njupt.png")));
         label_2->setScaledContents(true);
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
@@ -144,7 +144,7 @@ public:
         label_8 = new QLabel(centralwidget);
         label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setGeometry(QRect(0, 0, 471, 311));
-        label_8->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/Final_version/Test1_proj/pic/background.png")));
+        label_8->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/pic/background.png")));
         label_8->setScaledContents(true);
         MainWindow->setCentralWidget(centralwidget);
         label_8->raise();

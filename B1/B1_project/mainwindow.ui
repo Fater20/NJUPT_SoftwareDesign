@@ -52,7 +52,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="pic.qrc">:/new/prefix1/Final_version/Test1_proj/pic/njupt.png</pixmap>
+     <pixmap resource="pic.qrc">:/new/prefix1/pic/njupt.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -334,7 +334,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="pic.qrc">:/new/prefix1/Final_version/Test1_proj/pic/background.png</pixmap>
+     <pixmap resource="pic.qrc">:/new/prefix1/pic/background.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

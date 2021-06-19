@@ -108,7 +108,7 @@ public:
         label_2 = new QLabel(ratinge);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(50, 20, 51, 51));
-        label_2->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/Final_version/Test1_proj/pic/njupt.png")));
+        label_2->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/pic/njupt.png")));
         label_2->setScaledContents(true);
         e_number = new QLabel(ratinge);
         e_number->setObjectName(QString::fromUtf8("e_number"));
@@ -117,7 +117,7 @@ public:
         label_6 = new QLabel(ratinge);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(0, 0, 391, 371));
-        label_6->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/Final_version/Test1_proj/pic/background_4.png")));
+        label_6->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/pic/background_4.png")));
         label_6->setScaledContents(true);
         label_6->raise();
         scoreTable->raise();

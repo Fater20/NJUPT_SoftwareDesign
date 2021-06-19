@@ -43,7 +43,7 @@ public:
         label_2 = new QLabel(scoreDlg);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(50, 10, 51, 51));
-        label_2->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/Final_version/Test1_proj/pic/njupt.png")));
+        label_2->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/pic/njupt.png")));
         label_2->setScaledContents(true);
         line_3 = new QFrame(scoreDlg);
         line_3->setObjectName(QString::fromUtf8("line_3"));
@@ -117,7 +117,7 @@ public:
         label_6 = new QLabel(scoreDlg);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(0, 0, 391, 371));
-        label_6->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/Final_version/Test1_proj/pic/background_4.png")));
+        label_6->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/pic/background_4.png")));
         label_6->setScaledContents(true);
         label_6->raise();
         label_2->raise();
