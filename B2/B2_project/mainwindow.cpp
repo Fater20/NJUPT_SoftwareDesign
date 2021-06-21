@@ -58,7 +58,7 @@ int code(char *p)
 void write_file()
 {
     FILE *fp;
-    while((fp=fopen(".\\data\\fy.dat","wb"))==NULL)
+    while((fp=fopen("D:\\Program\\NJUPT_SoftwareDesign\\B2\\B2_exe\\data\\fy.dat","wb"))==NULL)
     {
         cout<<"\tCan't open the file! "<<endl;
         exit(1);
@@ -86,7 +86,7 @@ void MainWindow::display()
 
     int i;
     //model->setRowCount(source_cnt);
-
+    //QMessageBox::warning(NULL,"WARNING","ok ",QMessageBox::Cancel);
     //table内各单元显示
     for(i = 0; i < source_cnt; i++)
     {
