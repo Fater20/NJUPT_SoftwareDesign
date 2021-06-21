@@ -86,6 +86,22 @@ void getData(){
     getPassrate();
 }
 
+void write_file()
+{
+    FILE *fp;
+    while((fp=fopen("D:\\Program\\NJUPT_SoftwareDesign\\B1\\B1_exe\\data\\out.dat","wb"))==NULL)
+    {
+        cout<<"\tCan't open the file! "<<endl;
+        exit(1);
+    }
+    fprintf(fp, "%-14s%-12s%-10s\r\n","学生学号","总评成绩","成绩等级");
+    for(int i=0;i<stu_num;i++)
+    {
+        fprintf(fp,"%-14s%-12.1f%-10c\r\n",students[i].stu_num,students[i].overallScore,students[i].Rating);
+    }
+    fclose(fp);
+}
+
 scoreDlg::scoreDlg(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::scoreDlg)
@@ -132,6 +148,8 @@ scoreDlg::scoreDlg(QWidget *parent) :
 
     ui->aveLabel->setText(averageScore);
     ui->passRate->setText(rate);
+
+    write_file();
 }
 
 scoreDlg::~scoreDlg()
