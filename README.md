@@ -24,6 +24,7 @@ This is the software design of NJUPT (this topic seems only belong to the colleg
 * 请注意B1以及Menu中resource图片的路径和B1中note.dat数据文件的路径（这里偷懒了，使用的是绝对路径）。
 * A3修改自Qt例程，如无法使用，请尽量使用Requirements内的配置。
 * 本项目仅供学习使用，本团队强烈反对内卷。
+* 总体而言，由于时间因素，项目完成非常粗糙，例如A4、A5没有layout，B1代码结构冗杂等。若无特殊情况，本团队将不会继续更新本项目，但欢迎大家贡献自己的代码或想法。
 
 ## Contributors
 
